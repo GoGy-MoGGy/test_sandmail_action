@@ -36,3 +36,19 @@ jobs:
           echo test, and deploy your project.
 
 
+     - name: "TG NTF"
+     uses: "appleboy/telegram-action@master"
+     with:
+      to: {{secret.TELEGRAM_CHAT_ID}}
+      token:{{secret.TG_BOT_ID}}
+      args: "TEST"
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
