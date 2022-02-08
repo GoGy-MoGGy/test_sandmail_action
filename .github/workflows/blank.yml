@@ -49,7 +49,7 @@ jobs:
         with:
           url: "http://example.com"
           user: "example"
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.jid }}
           job: "foobar"
       
       
