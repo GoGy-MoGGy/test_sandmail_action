@@ -44,7 +44,7 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
-          args: "@tulennnnka тест проверОчка ${{ github.event.push.head.sha }} да блять "
+          args: "@tulennnnka тест проверОчка ${{ github.push.head.sha }} да блять "
     
       
       
