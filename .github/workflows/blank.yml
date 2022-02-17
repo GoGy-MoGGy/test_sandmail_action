@@ -40,14 +40,14 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
-          args: "@tulennnnka тест проверОчки"
+          args: "@tulennnnka тест проверОчка ${{ github.sha }}"
       
       
       
       - name: trigger single Job
         uses: appleboy/jenkins-action@master
         with:
-          token: ${{ secrets.jid }}
+          token: ${{ secrets.jid }} 
           job: " test_git "
       
       
