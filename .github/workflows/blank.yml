@@ -36,7 +36,7 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
-          ref: ${{ data }} = ${{ github.event.push.head.sha }}
+          ref: ${{ data }} == ${{ github.event.push.head.sha }}
           fetch-depth: 0
           
       - name: "TG NTF"
