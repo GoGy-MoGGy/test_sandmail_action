@@ -33,9 +33,10 @@ jobs:
           echo test, and deploy your project
           git log -p -2
           echo ${{ env.GIT_AUTHOR_NAME }}
+          echo $data
       - name: "TG NTF1"
         uses: "appleboy/telegram-action@master"
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
-          args: "да блять 🥺"
+          args: "фывфывфывфыв"
