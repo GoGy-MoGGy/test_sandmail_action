@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+a # This is a basic workflow to help you get started with Actions
 
 name: CI
 
@@ -42,7 +42,7 @@ jobs:
       - name: "TG NTF"
         uses: "appleboy/telegram-action@master"
         with:
-          run: "echo git log >> $GITHUB_ENV "
+          run: QWERTY ="echo git log" >> $GITHUB_ENV 
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
-          args: "@tulennnnka тест проверОчка ${{ env}} да блять  плакать :("
+          args: "@tulennnnka тест проверОчка ${{ env.QWERTY}} да блять  плакать :("
