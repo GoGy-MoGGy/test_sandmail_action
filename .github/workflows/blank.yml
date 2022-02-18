@@ -31,7 +31,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project
-          git log
+          data = "git log" >> $GITHUB_ENV
           
       - name: "TG NTF"
         uses: "appleboy/telegram-action@master"
