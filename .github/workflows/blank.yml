@@ -39,4 +39,5 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
-          args: "${{ env.git-commit-tree }} , ${{ env.GIT_COMMITTER_DATE }} "
+          args: "${{ env.git-commit-tree }} "
+          args1: "${{ env.GIT_COMMITTER_DATE }}"
