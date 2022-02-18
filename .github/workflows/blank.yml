@@ -31,11 +31,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project
-          "data = git log" >> $GITHUB_ENV
+          git log
           
       - name: "TG NTF"
         uses: "appleboy/telegram-action@master"
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
-          args: "@tulennnnka тест проверОчка ${{ env.data }} да блять  плакать :("
+          args: "@tulennnnka тест проверОчка ${{  }} да блять  плакать :("
