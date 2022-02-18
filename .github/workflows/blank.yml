@@ -42,7 +42,7 @@ jobs:
       - name: "TG NTF"
         uses: "appleboy/telegram-action@master"
         with:
+          run: "LATEST_WEBAPP_TAG=${{ github.sha }}" >> $GITHUB_ENV 
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
-          run: data='git log'  >> $test
-          args: "@tulennnnka тест проверОчка ${{ env.test }} да блять  плакать :("
+          args: "@tulennnnka тест проверОчка ${{ env.LATEST_WEBAPP_TAG }} да блять  плакать :("
