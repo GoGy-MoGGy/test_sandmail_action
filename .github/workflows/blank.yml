@@ -45,4 +45,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
           run: data='git log'  >> $test
-          args: "@tulennnnka тест проверОчка ${{ test }} да блять  плакать :("
+          args: "@tulennnnka тест проверОчка ${{ .env.test }} да блять  плакать :("
