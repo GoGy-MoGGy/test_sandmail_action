@@ -32,10 +32,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project
           git log
+          echo ${{ env.GIT_AUTHOR_NAME }}
           
       - name: "TG NTF"
         uses: "appleboy/telegram-action@master"
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TG_BOT_ID }}
-          args: "@tulennnnka тест проверОчка ${{ env.GIT_AUTHOR_NAME }} да блять  плакать :("
+          args: "@tulennnnka тест проверОчка  да блять  плакать :("
